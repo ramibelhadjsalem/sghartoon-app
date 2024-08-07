@@ -33,7 +33,7 @@ jobs:
         
     - name: Build Docker image
       run: |
-        docker buildx build --platform linux/amd64 -t ramibhs/backend:${{ github.sha }} .
+        docker buildx build --platform linux/amd64 -t ramibhs/backend:${{ github.sha }} -f backend/API/Dockerfile .
         echo "DOCKER_IMAGE=ramibhs/backend:${{ github.sha }}" >> $GITHUB_ENV
 
     - name: Log in to Docker Hub
