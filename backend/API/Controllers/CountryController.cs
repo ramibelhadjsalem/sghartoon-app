@@ -42,7 +42,7 @@ namespace API.Controllers
         {
             if (country == null)
             {
-                return BadRequest("Specialite is null...");
+                return BadRequest("Specialite is null....");
             }
             await _repository.Create(country);
             return CreatedAtAction(nameof(GetById), new { id = country.Id }, country);
