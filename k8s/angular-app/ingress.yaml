@@ -1,0 +1,17 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: angular-app-ingress
+  namespace: argocd
+spec:
+  rules:
+  - host: angular.yourdomain.com
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: angular-app-service
+            port:
+              number: 80

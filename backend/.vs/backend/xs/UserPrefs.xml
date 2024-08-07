@@ -1,37 +1,23 @@
 ﻿<Properties NuGet.AddPackagesDialog.IncludePrerelease="True" StartupConfiguration="{C87D1F26-CD03-4578-A589-F475B8600E45}|https">
-  <MonoDevelop.Ide.DebuggingService.Breakpoints />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.ItemProperties.API PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
-  <MonoDevelop.Ide.ItemProperties.TESTS FirstBuild="True" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="API/Data/CountryRepository.cs">
-    <Files>
-      <File FileName="API/Models/AbstractModel.cs" />
-      <File FileName="API/Data/IRepository.cs" />
-      <File FileName="API/Data/MongoRepository.cs" />
-      <File FileName="API/Models/Country.cs" />
-      <File FileName="API/Models/Specialite.cs" />
-      <File FileName="API/Data/CountryRepository.cs" Line="16" Column="1" />
-      <File FileName="API/Data/SpecialiteRepository.cs" />
-      <File FileName="API/Extentions/ApplicationServiceExtensions.cs" />
-      <File FileName="API/Data/MongoDBSettings.cs" />
-      <File FileName="API/appsettings.json" />
-      <File FileName="API/Program.cs" />
-      <File FileName="API/Controllers/SpecialiteController.cs" />
-    </Files>
+  <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="backend" expanded="True">
-            <Node name="API" expanded="True">
-              <Node name="Data" expanded="True">
-                <Node name="CountryRepository.cs" selected="True" />
-              </Node>
-              <Node name="Extentions" expanded="True" />
-              <Node name="Models" expanded="True" />
-            </Node>
+            <Node name="API" expanded="True" />
           </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="backend" selected="True" />
         </State>
       </Pad>
     </Pads>

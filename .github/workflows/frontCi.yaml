@@ -1,0 +1,58 @@
+name: Angular CI Pipeline
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'front/**'
+  pull_request:
+    branches:
+      - main
+    paths:
+      - 'front/**'
+
+jobs:
+  build-and-test-angular:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '14'
+
+    - name: Install Angular CLI
+      run: npm install -g @angular/cli
+
+    - name: Install dependencies
+      working-directory: front
+      run: npm install
+
+    - name: Run Angular tests
+      working-directory: front
+      run: ng test --watch=false --browsers=ChromeHeadless --code-coverage
+
+    - name: Build Docker image
+      working-directory: front
+      run: |
+        docker buildx build --platform linux/amd64 -t ramibhs/angular-app:${{ github.sha }} .
+        echo "DOCKER_IMAGE=ramibhs/angular-app:${{ github.sha }}" >> $GITHUB_ENV
+
+    - name: Log in to Docker Hub
+      run: echo ${{ secrets.DOCKER_HUB_PASSWORD }} | docker login -u ${{ secrets.DOCKER_HUB_USERNAME }} --password-stdin
+
+    - name: Push Docker image to Docker Hub
+      run: docker push ramibhs/angular-app:${{ github.sha }}
+      
+    - name: Deploy to Kubernetes
+      uses: argoproj/argo-cd@v2.3.0
+      with:
+        argo-cd-username: ${{ secrets.ARGOCD_USERNAME }}
+        argo-cd-password: ${{ secrets.ARGOCD_PASSWORD }}
+        argo-cd-server: ${{ secrets.ARGOCD_SERVER }}
+        argo-cd-application: "angular-app"
+        image: ramibhs/angular-app:${{ github.sha }}
