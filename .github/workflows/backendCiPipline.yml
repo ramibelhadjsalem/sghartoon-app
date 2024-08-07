@@ -3,7 +3,7 @@ name: Backend CI Pipeline
 on:
   push:
     branches:
-      - master
+      - main
     paths:
       - 'backend/**'
   pull_request:
