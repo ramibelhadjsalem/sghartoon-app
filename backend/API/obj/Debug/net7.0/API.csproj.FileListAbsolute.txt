@@ -8,12 +8,17 @@
 /Users/MAC/Documents/GitHub/sghartoon-app/backend/API/bin/Debug/net7.0/AWSSDK.Core.dll
 /Users/MAC/Documents/GitHub/sghartoon-app/backend/API/bin/Debug/net7.0/AWSSDK.SecurityToken.dll
 /Users/MAC/Documents/GitHub/sghartoon-app/backend/API/bin/Debug/net7.0/DnsClient.dll
+/Users/MAC/Documents/GitHub/sghartoon-app/backend/API/bin/Debug/net7.0/Microsoft.AspNetCore.OpenApi.dll
+/Users/MAC/Documents/GitHub/sghartoon-app/backend/API/bin/Debug/net7.0/Microsoft.OpenApi.dll
 /Users/MAC/Documents/GitHub/sghartoon-app/backend/API/bin/Debug/net7.0/MongoDB.Bson.dll
 /Users/MAC/Documents/GitHub/sghartoon-app/backend/API/bin/Debug/net7.0/MongoDB.Driver.dll
 /Users/MAC/Documents/GitHub/sghartoon-app/backend/API/bin/Debug/net7.0/MongoDB.Driver.Core.dll
 /Users/MAC/Documents/GitHub/sghartoon-app/backend/API/bin/Debug/net7.0/MongoDB.Libmongocrypt.dll
 /Users/MAC/Documents/GitHub/sghartoon-app/backend/API/bin/Debug/net7.0/SharpCompress.dll
 /Users/MAC/Documents/GitHub/sghartoon-app/backend/API/bin/Debug/net7.0/Snappier.dll
+/Users/MAC/Documents/GitHub/sghartoon-app/backend/API/bin/Debug/net7.0/Swashbuckle.AspNetCore.Swagger.dll
+/Users/MAC/Documents/GitHub/sghartoon-app/backend/API/bin/Debug/net7.0/Swashbuckle.AspNetCore.SwaggerGen.dll
+/Users/MAC/Documents/GitHub/sghartoon-app/backend/API/bin/Debug/net7.0/Swashbuckle.AspNetCore.SwaggerUI.dll
 /Users/MAC/Documents/GitHub/sghartoon-app/backend/API/bin/Debug/net7.0/ZstdSharp.dll
 /Users/MAC/Documents/GitHub/sghartoon-app/backend/API/bin/Debug/net7.0/runtimes/linux/native/libmongocrypt.so
 /Users/MAC/Documents/GitHub/sghartoon-app/backend/API/bin/Debug/net7.0/runtimes/osx/native/libmongocrypt.dylib
@@ -23,6 +28,7 @@
 /Users/MAC/Documents/GitHub/sghartoon-app/backend/API/obj/Debug/net7.0/API.AssemblyInfoInputs.cache
 /Users/MAC/Documents/GitHub/sghartoon-app/backend/API/obj/Debug/net7.0/API.AssemblyInfo.cs
 /Users/MAC/Documents/GitHub/sghartoon-app/backend/API/obj/Debug/net7.0/API.csproj.CoreCompileInputs.cache
+/Users/MAC/Documents/GitHub/sghartoon-app/backend/API/obj/Debug/net7.0/API.MvcApplicationPartsAssemblyInfo.cs
 /Users/MAC/Documents/GitHub/sghartoon-app/backend/API/obj/Debug/net7.0/API.MvcApplicationPartsAssemblyInfo.cache
 /Users/MAC/Documents/GitHub/sghartoon-app/backend/API/obj/Debug/net7.0/staticwebassets/msbuild.API.Microsoft.AspNetCore.StaticWebAssets.props
 /Users/MAC/Documents/GitHub/sghartoon-app/backend/API/obj/Debug/net7.0/staticwebassets/msbuild.build.API.props
@@ -38,9 +44,3 @@
 /Users/MAC/Documents/GitHub/sghartoon-app/backend/API/obj/Debug/net7.0/API.pdb
 /Users/MAC/Documents/GitHub/sghartoon-app/backend/API/obj/Debug/net7.0/API.genruntimeconfig.cache
 /Users/MAC/Documents/GitHub/sghartoon-app/backend/API/obj/Debug/net7.0/ref/API.dll
-/Users/MAC/Documents/GitHub/sghartoon-app/backend/API/obj/Debug/net7.0/API.MvcApplicationPartsAssemblyInfo.cs
-/Users/MAC/Documents/GitHub/sghartoon-app/backend/API/bin/Debug/net7.0/Microsoft.AspNetCore.OpenApi.dll
-/Users/MAC/Documents/GitHub/sghartoon-app/backend/API/bin/Debug/net7.0/Microsoft.OpenApi.dll
-/Users/MAC/Documents/GitHub/sghartoon-app/backend/API/bin/Debug/net7.0/Swashbuckle.AspNetCore.Swagger.dll
-/Users/MAC/Documents/GitHub/sghartoon-app/backend/API/bin/Debug/net7.0/Swashbuckle.AspNetCore.SwaggerGen.dll
-/Users/MAC/Documents/GitHub/sghartoon-app/backend/API/bin/Debug/net7.0/Swashbuckle.AspNetCore.SwaggerUI.dll

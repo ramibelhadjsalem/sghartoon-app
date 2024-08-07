@@ -25,4 +25,8 @@
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.20" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.7.0" />
   </ItemGroup>
+    <ItemGroup>
+	    <InternalsVisibleTo Include="tests" />
+    </ItemGroup>
+ 
 </Project>
