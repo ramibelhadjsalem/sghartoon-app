@@ -55,7 +55,7 @@ jobs:
         branch: master
         targetBranch: master
         createPR: false
-        message: 'Update deployment image to ramibhs/intership-backend:${{ github.sha }}'
+        message: 'Update deployment image to ramibhs/backend:${{ github.sha }}'
         token: ${{ secrets.TOKEN }}
         
     - name: Display deployment.yaml after modification
