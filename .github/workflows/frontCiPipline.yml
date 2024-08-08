@@ -57,8 +57,8 @@ jobs:
         propertyPath: 'spec.template.spec.containers[0].image'
         value: ramibhs/frontend:${{ github.sha }}
         commitChange: false
-        branch: master
-        targetBranch: master
+        branch: main
+        targetBranch: main
         createPR: false
         message: 'Update deployment image to ramibhs/frontend:${{ github.sha }}'
         token: ${{ secrets.TOKEN }}
