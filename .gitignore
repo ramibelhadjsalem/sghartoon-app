@@ -1,0 +1,4 @@
+**/obj
+**/bin
+./backend/tests/obj/** 
+./backend/tests/bin

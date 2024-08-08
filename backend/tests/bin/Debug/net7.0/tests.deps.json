@@ -33,7 +33,7 @@
   },
   "targets": {
     ".NETCoreApp,Version=v7.0": {
-      "tests/1.0.0": {
+      "TESTS/1.0.0": {
         "dependencies": {
           "API": "1.0.0",
           "Microsoft.AspNetCore.Mvc.Testing": "7.0.20",
@@ -339,10 +339,10 @@
           "WindowsBase": "4.0.0.0"
         },
         "runtime": {
-          "tests.dll": {}
+          "TESTS.dll": {}
         },
         "compile": {
-          "tests.dll": {}
+          "TESTS.dll": {}
         }
       },
       "AWSSDK.Core/3.7.100.14": {
@@ -3652,7 +3652,7 @@
     }
   },
   "libraries": {
-    "tests/1.0.0": {
+    "TESTS/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
