@@ -31,6 +31,14 @@ jobs:
       with:
         dotnet-version: '7.0.x'
         
+    - name: Build .NET solution
+      run: dotnet build --configuration Release
+      working-directory: backend
+      
+    - name: Run .NET tests
+      run: dotnet test  --no-build --logger trx
+      working-directory: backend
+      
     - name: Change directory to backend/API
       run: cd backend/API
 
