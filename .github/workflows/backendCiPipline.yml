@@ -36,8 +36,8 @@ jobs:
       working-directory: backend
       
     - name: Run .NET tests
-      run: dotnet test backend/tests/TESTS.csproj --logger trx
-      working-directory: backend
+      run: dotnet test TESTS.csproj --logger trx
+      working-directory: backend/tests
       
     - name: Change directory to backend/API
       run: cd backend/API
