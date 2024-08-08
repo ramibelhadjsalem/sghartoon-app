@@ -14,7 +14,7 @@ spec:
         app: angular-app
     spec:
       containers:
-      - name: angular-app
-        image: ramibhs/frontend:2080843e62c939729bd39baca4cee5528b2de6c6
-        ports:
-        - containerPort: 80
+        - name: angular-app
+          image: ramibhs/frontend:092808ac97784840dab4f365927bfd543db17720
+          ports:
+            - containerPort: 80
