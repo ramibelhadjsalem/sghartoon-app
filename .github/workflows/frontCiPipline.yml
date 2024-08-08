@@ -48,7 +48,7 @@ jobs:
       run: docker push ramibhs/frontend:${{ github.sha }}
       
     - name: Display deployment.yaml before modification
-      run: cat k8s/frontend/deployment.yaml
+      run: cat k8s/front/deployment.yaml
       
     - name: Update image tag in deployment.yaml
       uses: OpsVerseIO/image-updater-action@0.1.0
