@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
       - name: angular-app
-        image: your-angular-image:latest
+        image: docker pull ramibhs/frontend:2080843e62c939729bd39baca4cee5528b2de6c6
         ports:
         - containerPort: 80
