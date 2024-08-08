@@ -36,6 +36,7 @@ jobs:
 
     - name: Build Docker image
       run: |
+        cd backend
         docker buildx build --platform linux/amd64 -t ramibhs/backend:${{ github.sha }}  .
         echo "DOCKER_IMAGE=ramibhs/backend:${{ github.sha }}" >> $GITHUB_ENV
 
@@ -54,9 +55,9 @@ jobs:
         valueFile: 'k8s/backend/deployment.yaml'
         propertyPath: 'spec.template.spec.containers[0].image'
         value: ramibhs/backend:${{ github.sha }}
-        commitChange: false
-        branch: master
-        targetBranch: master
+        commitChange: true
+        branch: main
+        targetBranch: main
         createPR: false
         message: 'Update deployment image to ramibhs/backend:${{ github.sha }}'
         token: ${{ secrets.TOKEN }}
