@@ -31,15 +31,15 @@ jobs:
       with:
         dotnet-version: '7.0.x'
         
-    - name: Change directory to backend/API
-      run: cd backend/API
+    - name: Change directory to backend
+      run: cd backend
 
     - name: Restore .NET dependencies
-      run: dotnet restore
+      run: dotnet restore backend/backend.sln
 
     - name: Run .NET tests
-      run: dotnet test --no-build --logger trx
-    
+      run: dotnet test backend/backend.sln --no-build --logger trx
+
     - name: Build Docker image
       run: |
         cd backend
