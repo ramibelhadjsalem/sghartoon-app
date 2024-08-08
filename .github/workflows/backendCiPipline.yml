@@ -34,6 +34,12 @@ jobs:
     - name: Change directory to backend/API
       run: cd backend/API
 
+    - name: Restore .NET dependencies
+      run: dotnet restore
+
+    - name: Run .NET tests
+      run: dotnet test --no-build --logger trx
+    
     - name: Build Docker image
       run: |
         cd backend
