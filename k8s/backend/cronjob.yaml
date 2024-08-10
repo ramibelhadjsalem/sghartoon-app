@@ -13,5 +13,5 @@ spec:
           - name: argo-sync
             image: argoproj/argocd-cli:v2.4.0
             command: ["/bin/sh", "-c"]
-            args: ["argocd app sync sghartoon-app-backend --auth-token <YOUR_AUTH_TOKEN>"]
+            args: ["argocd app sync sghartoon-app-backend"]
           restartPolicy: OnFailure
