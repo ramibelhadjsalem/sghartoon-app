@@ -11,7 +11,7 @@ spec:
         spec:
           containers:
           - name: argo-sync
-            image: argoproj/argocd-cli:v2.4.0
+            image: argoproj/argocd-cli:v2.12.0
             command: ["/bin/sh", "-c"]
             args: ["argocd app sync sghartoon-app-backend"]
           restartPolicy: OnFailure
