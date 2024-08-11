@@ -17,4 +17,4 @@ spec:
         - name: dotnet-api
           image: ramibhs/backend:0b8ee14d466d189a7f67126f4e64f01b46423b9e
           ports:
-            - containerPort: 80
+            - containerPort: 81
