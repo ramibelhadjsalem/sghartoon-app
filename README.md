@@ -66,4 +66,12 @@ Accédez à l'interface utilisateur d'Argo CD :
     kubectl get secret argocd-initial-admin-secret -n argocd -o jsonpath="{.data.password}" | base64 -d
 
 ```
+```bash
+    kubectl get svc -n argocd
+
+
+  kubectl patch svc argocd-server -n argocd -p "{\"spec\": {\"type\": \"LoadBalancer\"}}"
+```
+
+```
 
