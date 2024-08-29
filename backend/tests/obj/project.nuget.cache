@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "BXT7deTCM8bsrk2fbB8HOk8KZ6vpcFkKBpmMdmNxgfhVJdukr5ztXd423rG11ioQ6H0xmEHDIuV95/RKvh2g3g==",
+  "dgSpecHash": "27dxakyieZPW7YNczjn5lYJ5wjLc2t+dhwxTV6B8dKs5qr7pMb4DehUpiKbQK68/hPV0CB3pDiPEAPyIpM54GQ==",
   "success": true,
-  "projectFilePath": "/Users/MAC/Documents/GitHub/sghartoon-app/backend/tests/tests.csproj",
+  "projectFilePath": "/Users/MAC/Documents/GitHub/sghartoon-app/backend/tests/TESTS.csproj",
   "expectedPackageFiles": [
     "/Users/MAC/.nuget/packages/awssdk.core/3.7.100.14/awssdk.core.3.7.100.14.nupkg.sha512",
     "/Users/MAC/.nuget/packages/awssdk.securitytoken/3.7.100.14/awssdk.securitytoken.3.7.100.14.nupkg.sha512",

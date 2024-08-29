@@ -1,7 +1,7 @@
 {
   "format": 1,
   "restore": {
-    "/Users/MAC/Documents/GitHub/sghartoon-app/backend/tests/tests.csproj": {}
+    "/Users/MAC/Documents/GitHub/sghartoon-app/backend/tests/TESTS.csproj": {}
   },
   "projects": {
     "/Users/MAC/Documents/GitHub/sghartoon-app/backend/API/API.csproj": {
@@ -75,12 +75,12 @@
         }
       }
     },
-    "/Users/MAC/Documents/GitHub/sghartoon-app/backend/tests/tests.csproj": {
+    "/Users/MAC/Documents/GitHub/sghartoon-app/backend/tests/TESTS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/MAC/Documents/GitHub/sghartoon-app/backend/tests/tests.csproj",
-        "projectName": "tests",
-        "projectPath": "/Users/MAC/Documents/GitHub/sghartoon-app/backend/tests/tests.csproj",
+        "projectUniqueName": "/Users/MAC/Documents/GitHub/sghartoon-app/backend/tests/TESTS.csproj",
+        "projectName": "TESTS",
+        "projectPath": "/Users/MAC/Documents/GitHub/sghartoon-app/backend/tests/TESTS.csproj",
         "packagesPath": "/Users/MAC/.nuget/packages/",
         "outputPath": "/Users/MAC/Documents/GitHub/sghartoon-app/backend/tests/obj/",
         "projectStyle": "PackageReference",
