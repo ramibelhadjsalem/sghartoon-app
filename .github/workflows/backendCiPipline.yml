@@ -94,26 +94,26 @@ jobs:
       env:
         SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
 
-  notify:
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
-      - name: Send notification to Slack via webhook
-        uses: slackapi/slack-github-action@v1.26.0
-        with:
-          channel-id: 'general'
-          payload: |
-                  {
-                    "text": "Backend CI pipeline result: ${{ needs.build.result }}\n${{ github.event.pull_request.html_url || github.event.head_commit.url }}",
-                    "blocks": [
-                      {
-                        "type": "section",
-                        "text": {
-                          "type": "mrkdwn",
-                          "text": "Backend CI pipeline result: ${{ needs.build.result }}\n${{ github.event.pull_request.html_url || github.event.head_commit.url }}"
-                        }
-                      }
-                    ]
-                  }
-        env:
-          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+  # notify:
+  #   needs: build
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - name: Send notification to Slack via webhook
+  #       uses: slackapi/slack-github-action@v1.26.0
+  #       with:
+  #         channel-id: 'general'
+  #         payload: |
+  #                 {
+  #                   "text": "Backend CI pipeline result: ${{ needs.build.result }}\n${{ github.event.pull_request.html_url || github.event.head_commit.url }}",
+  #                   "blocks": [
+  #                     {
+  #                       "type": "section",
+  #                       "text": {
+  #                         "type": "mrkdwn",
+  #                         "text": "Backend CI pipeline result: ${{ needs.build.result }}\n${{ github.event.pull_request.html_url || github.event.head_commit.url }}"
+  #                       }
+  #                     }
+  #                   ]
+  #                 }
+  #       env:
+  #         SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
